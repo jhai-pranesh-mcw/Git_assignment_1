@@ -18,6 +18,6 @@ int main()
 
     int difference;
 
-    difference = number_1 / number_2;//calculate the difference
+    difference = number_1 - number_2;//calculate the difference
     return 0;
 }

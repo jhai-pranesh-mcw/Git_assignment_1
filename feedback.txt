@@ -1,0 +1,8 @@
+What I found harder?
+
+1. Setting up the local config and connecting it with the remote repo i created
+2. I found how similar some commands were
+3. The options and arguments that are used along with the commands.
+4. reading the document to dive deeper into git.
+
+After completing phase-1 , phase-2 was so much easier

@@ -22,6 +22,6 @@ int main()
 
     int quotient;
 
-    quotient = number_1 % number_2;
+    if(number_2 != 0) quotient = number_1 % number_2;
     return 0;
 }

@@ -54,3 +54,21 @@ Creating a rebase-demo branch
 git switch -c rebase-demo
 ```
 
+### Four commits :
+![Four commits](assets/demo-rebase-commit.png)
+
+### Interactive rebase
+
+![interactive-rebase](assets/interactive-rebase.png)
+
+### reword
+
+![Reword](assets/reword.png)
+
+### after rewording the 4th commit
+
+![after reword](assets/After-3-squash-1-reword.png)
+
+### after squashing all four commits
+![final rebase](assets/final-rebase-log.png)
+

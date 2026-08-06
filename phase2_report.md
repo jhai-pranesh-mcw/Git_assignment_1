@@ -47,7 +47,7 @@ and the tree became
 `git reflog` is different from `git log` because git log only shows the commit history that can be reached from the branch or if `--all` is mentioned, then it shows all commits that are reachable from every branch, but git reflog
 shows the history of all the reference movements like HEAD or branch ref , including the commits that are no longer reachable.
 
-## git rebase and rebase squash
+## git rebase interactive squash
 
 Creating a rebase-demo branch
 ```bash
@@ -72,3 +72,52 @@ git switch -c rebase-demo
 ### after squashing all four commits
 ![final rebase](assets/final-rebase-log.png)
 
+
+## git cherry-pick
+
+Creating the branches
+```bash
+git switch -c feature-a
+git switch main
+git switch -c feature-b
+```
+switch to feature-a
+```bash
+git switch feature-a
+```
+Create two commits:
+```bash
+Hp@DESKTOP-AL6B09U MINGW64 ~/Samplerepository (feature-a)
+$ git commit -am "Commit 1"
+[feature-a 52500d9] Commit 1
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+Hp@DESKTOP-AL6B09U MINGW64 ~/Samplerepository (feature-a)
+$ git commit -am "Commit 2"
+[feature-a 87baf1d] Commit 2
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+ ```
+
+switch to feature-b
+```bash
+git switch feature-b
+```
+
+cherry pick the first commit from feature-1 
+```bash
+Hp@DESKTOP-AL6B09U MINGW64 ~/Samplerepository (feature-b)
+$ git cherry-pick 52500d9
+[feature-b b175b7a] Commit 1
+ Date: Thu Aug 6 22:43:36 2026 +0530
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+```
+After cherry-pick the log is 
+
+```bash
+Hp@DESKTOP-AL6B09U MINGW64 ~/Samplerepository (feature-b)
+$ git log --oneline
+b175b7a (HEAD -> feature-b) Commit 1
+```
+
+### **Q: Why cherry-pick was used?**
+Cherry -pick is to be used when we only need a specific commit not the entire branch. Here we used cherry-pick to pick pick only the commit 1 from feature-a and created another commit in feature-b.

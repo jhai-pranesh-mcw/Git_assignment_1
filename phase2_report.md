@@ -121,3 +121,31 @@ b175b7a (HEAD -> feature-b) Commit 1
 
 ### **Q: Why cherry-pick was used?**
 Cherry -pick is to be used when we only need a specific commit not the entire branch. Here we used cherry-pick to pick pick only the commit 1 from feature-a and created another commit in feature-b.
+
+## Cleanup
+
+Before deleting the branches
+```bash
+Hp@DESKTOP-AL6B09U MINGW64 ~/Samplerepository (main)
+$ git branch
+  bug_fix
+  feature
+  feature-a
+  feature-b
+* main
+  rebase-demo
+  release
+```
+
+Deleted using 
+```bash
+$ git branch -d bug_fix feature-a feature-b rebase-demo
+```
+
+After deleting
+```bash
+$ git branch
+  feature
+* main
+  release
+```

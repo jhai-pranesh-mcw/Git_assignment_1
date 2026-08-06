@@ -10,3 +10,5 @@ Commit 1 in rebase-demo
 Commit 2 in rebase-demo
 Commit 3 in rebase-demo
 Commit 4 in rebase-demo
+
+Commit 1 in feature-a

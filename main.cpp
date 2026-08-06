@@ -19,5 +19,9 @@ int main()
     int difference;
 
     difference = number_1 - number_2;//calculate the difference
+
+    int quotient;
+
+    quotient = number_1 % number_2;
     return 0;
 }

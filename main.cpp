@@ -20,7 +20,7 @@ int main()
 
     difference = number_1 - number_2;//calculate the difference
 
-    int quotient;
+    int quotient = 0;
 
     if(number_2 != 0) quotient = number_1 / number_2;//calculate the quotient
     

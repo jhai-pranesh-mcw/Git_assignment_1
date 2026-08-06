@@ -3,12 +3,11 @@ using namespace std;
 int main()
 {
     int number;
-    cin>>number;//get the input
+    cin>>number;
 
-    int last = number % 2;
-    for(int  i = 2; i < last ; i++)
+    for(int  i = 2; i < number; i++)
     {
-        if(number % i == 0) // check if divisible 
+        if(number % i == 0)
         {
             cout<<"Not a prime";
             return 0;

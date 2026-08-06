@@ -52,7 +52,11 @@ int main()
 
     cout<<"\n Total :" << calc.Addition();
     cout<<"\n Subraction :" << calc.Subraction();
-    cout<<"\n Quotient :" << calc.Divide();
+    if(number_2 != 0) // zero check beofore hand 
+    {
+        cout<<"\n Quotient :" << calc.Divide();
+    }
+    else cout<<"Division by zero not possible";
     cout<<"\n Remainder :" << calc.Remainder();
     
     return 0;

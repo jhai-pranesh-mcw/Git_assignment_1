@@ -5,3 +5,8 @@ This is a message from feature branch
 Merge conflict from main
 
 Made a change for pull test
+
+Commit 1 in rebase-demo
+Commit 2 in rebase-demo
+Commit 3 in rebase-demo
+Commit 4 in rebase-demo

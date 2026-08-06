@@ -5,7 +5,8 @@ int main()
     int number;
     cin>>number;//get the input
 
-    for(int  i = 2; i < number/2 ; i++)
+    int last = number % 2;
+    for(int  i = 2; i < last ; i++)
     {
         if(number % i == 0) // check if divisible 
         {

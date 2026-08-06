@@ -149,3 +149,56 @@ $ git branch
 * main
   release
 ```
+
+Create the tag 
+```bash
+$ git tag -a v1.0.0 -m "Released version 1.0.0"
+```
+Tag details 
+```bash
+$ git show v1.0.0
+tag v1.0.0
+Tagger: jhai-pranesh-mcw <jhai.pranesh@multicorewareinc.com>
+Date:   Thu Aug 6 23:15:31 2026 +0530
+
+Released version 1.0.0
+
+commit 5161322d9155c1df3020472d56e71e6cd1340087 (HEAD -> release, tag: v1.0.0, origin/release, origin/main, origin/feature, main, feature)
+Author: jhai-pranesh-mcw <jhai.pranesh@multicorewareinc.com>
+Date:   Thu Aug 6 23:10:20 2026 +0530
+
+    CLEAN : Cleaned up the branches
+```
+Check the log for clean history
+```bash
+$ git log --oneline --graph --decorate --all
+* 5161322 (HEAD -> release, tag: v1.0.0, origin/release, origin/main, origin/feature, main, feature) CLEAN : Cleaned up the branches
+* 2f7b174 Complted cherry-pick
+* b175b7a Commit 1
+* 5074fa3 Practice reflog completed
+* ce4b91c Added assets
+* 4f95390 After combining all 4 commits using interactive rebase
+* 551ae72 Updated the report
+* 7475c0d Reverted to the commit de7c431
+* 59e65a9 Update : updated the name of the prime number check program
+* 4f3a5d8 UPDATE : updated the repeated computation of loop condition
+* de7c431 UPDATE : updated the loop condition for lesser checks
+* 290edd9 RENAME : Renamed the file to Prime_no_check.cpp
+* 96ee93f ADD : added a prime number check program
+* 1de0492 UPDATE : readme update
+*   7124eb5 Merge pull request #3 from jhai-pranesh-mcw/feature
+```
+
+push the tag to origin
+```bash
+$ git push origin v1.0.0
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 181 bytes | 90.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/jhai-pranesh-mcw/Git_assignment_1.git
+ * [new tag]         v1.0.0 -> v1.0.0
+ ```
+
+Release the verion in github
+![Version 1.0.0](assets/FINAL-RELEASE.png)

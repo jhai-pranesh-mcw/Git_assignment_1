@@ -2,4 +2,8 @@ Hello this is the first message from main
 
 This is a message from feature branch
 
+<<<<<<< HEAD
 Merge conflict from main
+=======
+Merge conflict from feature
+>>>>>>> feature

@@ -22,7 +22,7 @@ int main()
 
     int quotient;
 
-    quotient = number_1 / number_2;//calculate the quotient
+    if(number_2 != 0) quotient = number_1 / number_2;//calculate the quotient
     
     return 0;
 }

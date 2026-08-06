@@ -12,5 +12,8 @@ int main()
     
     sum = number_1 + number_2;//calculate the sum
     
+    int product;
+
+    product = number_1 * number_2;//calculate the product
     return 0;
 }
